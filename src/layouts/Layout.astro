@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import webConfig from "../../web.config.mjs";
+const { googleTagManagerId } = webConfig;
 ---
 
 <!doctype html>
@@ -8,7 +10,7 @@ import "../styles/global.css";
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXX"
+      src={`https://www.googletagmanager.com/gtag/js?id=${googleTagManagerId}`}
       type="text/partytown"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
@@ -16,7 +18,7 @@ import "../styles/global.css";
         dataLayer.push(arguments);
       };
       window.gtag("js", new Date());
-      window.gtag("config", "G-XXXXX");
+      window.gtag("config", googleTagManagerId);
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
