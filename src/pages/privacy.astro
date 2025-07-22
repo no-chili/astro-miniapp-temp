@@ -1,0 +1,299 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <!-- Background Texture -->
+  <div
+    class="fixed inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"
+  >
+    <div
+      class="absolute inset-0 opacity-30"
+      style='background-image: url(&apos;data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&apos;);'
+    >
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav
+    class="relative z-10 bg-black/20 backdrop-blur-md border-b border-gray-800"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <div class="flex items-center">
+              <a href="/" class="flex items-center">
+                <img
+                  src="/logo.png"
+                  alt="Step Joy Logo"
+                  class="w-8 rounded-md h-8 mr-2"
+                />
+                <h1 class="text-2xl font-bold text-yellow-400">Step Joy</h1>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a
+              href="/"
+              class="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >Home</a
+            >
+            <a
+              href="/terms"
+              class="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="relative z-10 pt-20 pb-32 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <!-- Page Title -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          <span class="text-yellow-400">Privacy Policy</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+          We value your privacy. This policy explains how we collect, use, and
+          protect your personal information.
+        </p>
+      </div>
+
+      <!-- Policy Content -->
+      <div
+        class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+      >
+        <div class="space-y-8">
+          <!-- 1. Information Collection -->
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+              <span
+                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+                >1</span
+              >
+              Information Collection
+            </h2>
+            <p class="text-gray-300 mb-4">
+              The types of information we collect include:
+            </p>
+            <ul class="text-gray-300 space-y-2 ml-8">
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span
+                  >Personal information you voluntarily provide (such as
+                  registration information)</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span
+                  >Information automatically collected when using our services
+                  (such as device information, usage records)</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span
+                  >Information from third parties (such as when you log in with
+                  a third-party account)</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 2. Information Usage -->
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+              <span
+                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+                >2</span
+              >
+              Information Usage
+            </h2>
+            <p class="text-gray-300 mb-4">
+              We use the collected information to:
+            </p>
+            <ul class="text-gray-300 space-y-2 ml-8">
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>Provide, maintain, and improve our services</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>Send service notifications and updates</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>Prevent fraud and enhance security</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>Conduct data analysis and service optimization</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 3. Information Protection -->
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+              <span
+                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+                >3</span
+              >
+              Information Protection
+            </h2>
+            <p class="text-gray-300 mb-4">
+              We take the following measures to protect your information:
+            </p>
+            <ul class="text-gray-300 space-y-2 ml-8">
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span
+                  >Use encryption technology to protect data transmission</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>Regularly backup data and conduct security audits</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>Restrict employee access to personal information</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>Sign confidentiality agreements with partners</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4. Information Sharing -->
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+              <span
+                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+                >4</span
+              >
+              Information Sharing
+            </h2>
+            <p class="text-gray-300 mb-4">
+              We may share your information in the following circumstances:
+            </p>
+            <ul class="text-gray-300 space-y-2 ml-8">
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>With your explicit consent</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span>As required by law or government authorities</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                ></span>
+                <span
+                  >To protect the legitimate interests of the company or users</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 5. Cookie Usage -->
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+              <span
+                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+                >5</span
+              >
+              Cookie Usage
+            </h2>
+            <p class="text-gray-300">
+              We use cookies and similar technologies to provide and support our
+              services. You can control cookie usage through your browser
+              settings. However, please note that disabling cookies may affect
+              the use of certain features.
+            </p>
+          </div>
+
+          <!-- 6. Privacy Policy Updates -->
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+              <span
+                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+                >6</span
+              >
+              Privacy Policy Updates
+            </h2>
+            <p class="text-gray-300">
+              We may update this privacy policy from time to time. If there are
+              significant changes, we will notify you through website notices or
+              email notifications. Continued use of our services indicates your
+              agreement to the new privacy policy.
+            </p>
+          </div>
+
+          <!-- 7. Contact Us -->
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+              <span
+                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+                >7</span
+              >
+              Contact Us
+            </h2>
+            <p class="text-gray-300 mb-4">
+              If you have any questions or suggestions about this privacy
+              policy, please contact us through the following method:
+            </p>
+            <p class="text-gray-300">
+              Email: <a
+                href="mailto:chengziwangluokeji@qq.com"
+                class="text-yellow-400 hover:text-yellow-300"
+                >chengziwangluokeji@qq.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-8 text-gray-400">
+        <p>&copy; 2024 Step Joy. All rights reserved.</p>
+      </div>
+    </div>
+  </section>
+</Layout>

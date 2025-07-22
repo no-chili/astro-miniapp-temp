@@ -1,32 +1,38 @@
 ---
 import "../styles/global.css";
-import webConfig from "../../web.config.mjs";
-const { googleTagManagerId } = webConfig;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src={`https://www.googletagmanager.com/gtag/js?id=${googleTagManagerId}`}
-      type="text/partytown"></script>
-    <script type="text/partytown">
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () {
-        dataLayer.push(arguments);
-      };
-      window.gtag("js", new Date());
-      window.gtag("config", googleTagManagerId);
-    </script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/logo.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>Step Joy - AI-Powered Productivity App</title>
+    <meta
+      name="description"
+      content="Step Joy is an AI-powered app that helps users overcome procrastination and improve productivity by breaking down goals into manageable steps."
+    />
+    <meta
+      name="keywords"
+      content="Step Joy, productivity, procrastination, AI assistant, goal management, task breakdown"
+    />
+    <meta
+      property="og:title"
+      content="Step Joy - AI-Powered Productivity App"
+    />
+    <meta
+      property="og:description"
+      content="Say goodbye to procrastination and improve productivity with AI-powered task breakdown"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop"
+    />
   </head>
-  <body>
+  <body class="bg-gray-900 text-white">
     <slot />
   </body>
 </html>

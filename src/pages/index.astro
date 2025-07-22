@@ -1,8 +1,622 @@
 ---
-import ReactComponent from "../components/react";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <ReactComponent />
+  <!-- Background Texture -->
+  <div
+    class="fixed inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"
+  >
+    <div
+      class="absolute inset-0 opacity-30"
+      style='background-image: url(&apos;data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&apos;);'
+    >
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav
+    class="relative z-10 bg-black/20 backdrop-blur-md border-b border-gray-800"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <div class="flex items-center">
+              <img
+                src="/logo.png"
+                alt="Step Joy Logo"
+                class="w-8 rounded-md h-8 mr-2"
+              />
+              <h1 class="text-2xl font-bold text-yellow-400">Step Joy</h1>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a
+              href="#features"
+              class="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >Features</a
+            >
+            <a
+              href="#ai"
+              class="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >AI Assistant</a
+            >
+            <a
+              href="#faq"
+              class="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >FAQ</a
+            >
+            <a
+              href="#download"
+              class="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative z-10 pt-20 pb-32 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="mb-8">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          <span class="text-yellow-400"> Say Goodbye to Procrastination </span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Transform complex goals into simple, actionable steps with AI-powered
+          task breakdown. Rediscover your motivation and productivity.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://apps.apple.com/app/id6748872649"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform cursor-pointer px-12 shadow-lg inline-flex items-center justify-center"
+          >
+            Download Now
+          </a>
+        </div>
+      </div>
+
+      <!-- App Screenshot -->
+      <div class="mt-16 relative">
+        <div class="relative mx-auto max-w-sm">
+          <img
+            src="/img.png"
+            alt="Step Joy App Interface"
+            class="rounded-2xl shadow-2xl mx-auto h-[600px] object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section
+    id="features"
+    class="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-black/20"
+  >
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          <span class="text-yellow-400"> Why Choose Step Joy </span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          We understand the struggle with procrastination. Step Joy uses
+          scientific methods and AI technology to help you regain control of
+          your life.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature Card 1 -->
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-yellow-500 transition-all duration-300"
+        >
+          <div
+            class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-black"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-white">
+            Smart Task Breakdown
+          </h3>
+          <p class="text-gray-300">
+            AI analyzes your goals and automatically breaks them down into
+            manageable steps, making complex tasks simple and clear.
+          </p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-yellow-500 transition-all duration-300"
+        >
+          <div
+            class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-black"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-white">
+            Real-time Progress Tracking
+          </h3>
+          <p class="text-gray-300">
+            Visualize your progress with instant feedback and achievements,
+            maintaining continuous motivation and focus.
+          </p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-yellow-500 transition-all duration-300"
+        >
+          <div
+            class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-8 h-8 text-black"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-white">
+            Personalized Recommendations
+          </h3>
+          <p class="text-gray-300">
+            AI provides personalized action suggestions based on your habits and
+            preferences, helping you build efficient work patterns.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Assistant Section -->
+  <section id="ai" class="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            <span class="text-yellow-400"> AI-Powered </span>
+            <br />
+            <span class="text-white">Smart Assistant</span>
+          </h2>
+          <p class="text-xl text-gray-300 mb-8">
+            Our AI assistant is more than just a tool—it's your personal
+            productivity coach. It will:
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <div
+                class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0"
+              >
+                <svg
+                  class="w-4 h-4 text-black"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <span class="text-gray-300"
+                >Analyze your goals and create detailed execution plans</span
+              >
+            </li>
+            <li class="flex items-start">
+              <div
+                class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0"
+              >
+                <svg
+                  class="w-4 h-4 text-black"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <span class="text-gray-300"
+                >Identify procrastination patterns and provide targeted
+                solutions</span
+              >
+            </li>
+            <li class="flex items-start">
+              <div
+                class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0"
+              >
+                <svg
+                  class="w-4 h-4 text-black"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <span class="text-gray-300"
+                >Adjust strategies and priorities based on your progress</span
+              >
+            </li>
+            <li class="flex items-start">
+              <div
+                class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0"
+              >
+                <svg
+                  class="w-4 h-4 text-black"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <span class="text-gray-300"
+                >Provide positive motivation and celebrate every small
+                achievement</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="relative max-w-sm mx-auto">
+          <img
+            src="/ai.png"
+            alt="AI Assistant Interface"
+            class="rounded-2xl shadow-2xl h-[500px] object-cover w-full"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          <span class="text-yellow-400"> What Users Say </span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+        >
+          <div class="flex items-center mb-4">
+            <img
+              src="https://api.dicebear.com/7.x/avataaars/svg?seed=liming&backgroundColor=4f46e5,7c3aed"
+              alt="User Avatar"
+              class="w-12 h-12 rounded-full mr-4"
+            />
+            <div>
+              <h4 class="text-white font-semibold">Michael Chen</h4>
+              <p class="text-gray-400 text-sm">Product Manager</p>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            "Step Joy has completely transformed my work approach. The AI helps
+            me break down complex projects into manageable steps, and now I can
+            easily accomplish tasks that seemed impossible before."
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+        >
+          <div class="flex items-center mb-4">
+            <img
+              src="https://api.dicebear.com/7.x/avataaars/svg?seed=zhanghong&backgroundColor=ec4899,ef4444"
+              alt="User Avatar"
+              class="w-12 h-12 rounded-full mr-4"
+            />
+            <div>
+              <h4 class="text-white font-semibold">Sarah Johnson</h4>
+              <p class="text-gray-400 text-sm">Student</p>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            "As someone who struggles with procrastination, Step Joy gave me the
+            courage to start fresh. The AI suggestions are always so thoughtful,
+            making me feel supported throughout my journey."
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+        >
+          <div class="flex items-center mb-4">
+            <img
+              src="https://api.dicebear.com/7.x/avataaars/svg?seed=wangdali&backgroundColor=10b981,3b82f6"
+              alt="User Avatar"
+              class="w-12 h-12 rounded-full mr-4"
+            />
+            <div>
+              <h4 class="text-white font-semibold">David Wilson</h4>
+              <p class="text-gray-400 text-sm">Entrepreneur</p>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            "The biggest challenge in entrepreneurship is execution. Step Joy's
+            AI assistant helped me build efficient work habits, and now my
+            projects are progressing much faster than expected."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          <span class="text-yellow-400"> Frequently Asked Questions </span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+          Common questions about Step Joy to help you better understand and use
+          our product
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Question 1 -->
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+        >
+          <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+            <span
+              class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+              >Q</span
+            >
+            How does Step Joy help me overcome procrastination?
+          </h3>
+          <p class="text-gray-300 ml-12">
+            Step Joy uses AI technology to break down your big goals into small,
+            manageable steps, making tasks easier to start. It also provides
+            real-time progress tracking and personalized recommendations to help
+            you build consistent action habits.
+          </p>
+        </div>
+
+        <!-- Question 2 -->
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+        >
+          <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+            <span
+              class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+              >Q</span
+            >
+            How does the AI assistant work?
+          </h3>
+          <p class="text-gray-300 ml-12">
+            Our AI assistant analyzes your input goals, combines psychological
+            principles and best practices to create personalized execution
+            plans. It continuously learns your habits and provides increasingly
+            accurate recommendations.
+          </p>
+        </div>
+
+        <!-- Question 3 -->
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+        >
+          <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+            <span
+              class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+              >Q</span
+            >
+            Is my data secure?
+          </h3>
+          <p class="text-gray-300 ml-12">
+            We take user privacy and data security very seriously. All data is
+            encrypted, and we do not share your personal information with third
+            parties. You can delete your account and data at any time.
+          </p>
+        </div>
+
+        <!-- Question 4 -->
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+        >
+          <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+            <span
+              class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+              >Q</span
+            >
+            Which platforms are supported?
+          </h3>
+          <p class="text-gray-300 ml-12">
+            Currently supports iOS mobile app and web version. We are developing
+            an Android version to allow more users to use Step Joy.
+          </p>
+        </div>
+
+        <!-- Question 5 -->
+        <div
+          class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
+        >
+          <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+            <span
+              class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
+              >Q</span
+            >
+            How can I get technical support?
+          </h3>
+          <p class="text-gray-300 ml-12">
+            You can contact us via email: chengziwangluokeji@qq.com, or through
+            the feedback function in the app. Our team will respond to your
+            questions within 24 hours.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        <span class="text-yellow-400"> Start Your </span>
+        <br />
+        <span class="text-white">Productivity Journey</span>
+      </h2>
+      <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+        Join tens of thousands of users and let our AI assistant help you
+        overcome procrastination and regain control of your life
+      </p>
+
+      <div class="flex justify-center mb-12">
+        <a
+          href="https://apps.apple.com/app/id6748872649"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-black hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 flex items-center justify-center"
+        >
+          <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+            ></path>
+          </svg>
+          Download on App Store
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer
+    class="relative z-10 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800"
+  >
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <img
+              src="/logo.png"
+              alt="Step Joy Logo"
+              class="w-10 h-10 rounded-md mr-3"
+            />
+            <h3 class="text-2xl font-bold text-yellow-400">Step Joy</h3>
+          </div>
+          <p class="text-gray-400 mb-4">
+            AI-powered productivity app that helps you overcome procrastination
+            and achieve your goals.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>
+              <a
+                href="#features"
+                class="hover:text-yellow-400 transition-colors">Features</a
+              >
+            </li>
+            <li>
+              <a href="#ai" class="hover:text-yellow-400 transition-colors"
+                >AI Assistant</a
+              >
+            </li>
+            <li>
+              <a href="#faq" class="hover:text-yellow-400 transition-colors"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Support</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>
+              <a
+                href="mailto:chengziwangluokeji@qq.com"
+                class="hover:text-yellow-400 transition-colors">Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#faq" class="hover:text-yellow-400 transition-colors"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>
+              <a href="/privacy" class="hover:text-yellow-400 transition-colors"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="/terms" class="hover:text-yellow-400 transition-colors"
+                >Terms of Service</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+        <p>
+          &copy; 2024 Step Joy. All rights reserved. | Contact: <a
+            href="mailto:chengziwangluokeji@qq.com"
+            class="text-yellow-400 hover:text-yellow-300"
+            >chengziwangluokeji@qq.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </footer>
 </Layout>
