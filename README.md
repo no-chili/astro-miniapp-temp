@@ -4,14 +4,6 @@
 
 使用方法：替换 `astro.config.mjs`中 site 为项目域名
 
-## github 工作流自动化部署
-
-替换`main.yml`文件下尾行为 Webhook URL
-
-```
-curl -X GET https://xxx.com/api/deploy/uJPy7WJ
-```
-
 ## 数据监控
 
 在 `layout.astro` 文件中替换为新创建的谷歌统计 id
