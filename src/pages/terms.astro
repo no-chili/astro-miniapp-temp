@@ -1,378 +1,131 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { SITE_EMAIL, SITE_NAME } from "../var.ts";
+const description = `Terms of Service for ${SITE_NAME} - Read our service agreement and user responsibilities.`;
 ---
 
-<Layout>
-  <!-- Background Texture -->
-  <div
-    class="fixed inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"
-  >
-    <div
-      class="absolute inset-0 opacity-30"
-      style='background-image: url(&apos;data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&apos;);'
-    >
+<Layout title="Terms of Service" description={description}>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
+
+      <div class="prose prose-lg max-w-none">
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            1. Service Description
+          </h2>
+          <p class="text-gray-600 mb-4">
+            Welcome to our website (hereinafter referred to as the "Website").
+            By accessing or using this website, you agree to these Terms of
+            Service (hereinafter referred to as the "Terms"). Please read them
+            carefully. If you do not agree, you must stop using this website.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            2. User Responsibilities
+          </h2>
+          <p class="text-gray-600 mb-4">As a user, you agree to:</p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>
+              Provide truthful, accurate, and complete personal information
+            </li>
+            <li>Comply with all applicable laws and regulations</li>
+            <li>Not engage in any behavior that may harm service operations</li>
+            <li>
+              Protect account security and be responsible for account activities
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            3. Intellectual Property
+          </h2>
+          <p class="text-gray-600 mb-4">
+            All rights, ownership, and interests in {SITE_NAME}, including but
+            not limited to software, interface design, technical documentation,
+            etc., are owned by {SITE_NAME}. Users may not:
+          </p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>Copy, modify, or distribute software code</li>
+            <li>Crack or reverse engineer software</li>
+            <li>Remove or modify copyright information</li>
+            <li>Use our trademarks and brand assets without authorization</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            4. Paid Services
+          </h2>
+          <p class="text-gray-600 mb-4">Regarding paid services:</p>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <li>All payments are final payments and non-refundable</li>
+            <li>
+              Prices may change at any time, but do not affect purchased
+              services
+            </li>
+            <li>Some features may require additional payments</li>
+            <li>Subscriptions will automatically renew unless you cancel</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            5. Disclaimer
+          </h2>
+          <p class="text-gray-600 mb-4">
+            Our services are provided as-is, without any express or implied
+            warranties. We do not warrant the accuracy, reliability,
+            applicability, or timeliness of our services. To the extent
+            permitted by law, we are not liable for any direct, indirect,
+            incidental, special, or consequential damages.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            6. Service Changes and Termination
+          </h2>
+          <p class="text-gray-600 mb-4">
+            We reserve the right to modify or terminate services at any time
+            without prior notice. If you violate the terms of service, we may
+            suspend or terminate your account access. After service termination,
+            you may not be able to access your account data.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            7. Dispute Resolution
+          </h2>
+          <p class="text-gray-600 mb-4">
+            These terms of service are governed by applicable laws. Any disputes
+            should be resolved through friendly negotiation. If negotiation
+            fails, disputes should be submitted to courts with jurisdiction for
+            resolution.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            8. Contact Information
+          </h2>
+          <p class="text-gray-600 mb-4">
+            If you have any questions about these terms of service, please
+            contact us:
+          </p>
+          <p class="text-gray-600">
+            Email: <a
+              href={`mailto:${SITE_EMAIL}`}
+              class="text-blue-600 hover:text-blue-800 cursor-pointer"
+              >{SITE_EMAIL}</a
+            >
+          </p>
+        </section>
+      </div>
     </div>
   </div>
-
-  <!-- Navigation -->
-  <nav
-    class="relative z-10 bg-black/20 backdrop-blur-md border-b border-gray-800"
-  >
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center">
-          <div class="flex-shrink-0">
-            <div class="flex items-center">
-              <a href="/" class="flex items-center">
-                <img
-                  src="/logo.png"
-                  alt="Step Joy Logo"
-                  class="w-8 rounded-md h-8 mr-2"
-                />
-                <h1 class="text-2xl font-bold text-yellow-400">Step Joy</h1>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-4">
-            <a
-              href="/"
-              class="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              >Home</a
-            >
-            <a
-              href="/privacy"
-              class="text-gray-300 hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              >Privacy Policy</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <section class="relative z-10 pt-20 pb-32 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto">
-      <!-- Page Title -->
-      <div class="text-center mb-16">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">
-          <span class="text-yellow-400">Terms of Service</span>
-        </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-          Please read the following terms carefully. Using our services
-          indicates your agreement to these terms.
-        </p>
-      </div>
-
-      <!-- Terms Content -->
-      <div
-        class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700"
-      >
-        <div class="space-y-8">
-          <!-- 1. Service Description -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >1</span
-              >
-              Service Description
-            </h2>
-            <p class="text-gray-300 mb-4">
-              Step Joy is an AI-powered productivity app designed to help users
-              overcome procrastination and improve work efficiency. Our services
-              include:
-            </p>
-            <ul class="text-gray-300 space-y-2 ml-8">
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Smart task breakdown and goal management</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>AI-driven personalized recommendations</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Progress tracking and data analysis</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Community support and sharing features</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- 2. User Responsibilities -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >2</span
-              >
-              User Responsibilities
-            </h2>
-            <p class="text-gray-300 mb-4">
-              When using our services, you need to:
-            </p>
-            <ul class="text-gray-300 space-y-2 ml-8">
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Provide truthful and accurate personal information</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span
-                  >Protect your account security and not share accounts with
-                  others</span
-                >
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Not use our services for any illegal activities</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Respect the rights and privacy of other users</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- 3. Prohibited Activities -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >3</span
-              >
-              Prohibited Activities
-            </h2>
-            <p class="text-gray-300 mb-4">You must not:</p>
-            <ul class="text-gray-300 space-y-2 ml-8">
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Post false, misleading, or harmful information</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span
-                  >Infringe on others' intellectual property or privacy rights</span
-                >
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Attempt to hack or bypass our security measures</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Use automated tools or bots to access our services</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- 4. Intellectual Property -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >4</span
-              >
-              Intellectual Property
-            </h2>
-            <p class="text-gray-300 mb-4">
-              Our services and content (including but not limited to software,
-              design, text, images, audio, video) are protected by intellectual
-              property laws. You may not:
-            </p>
-            <ul class="text-gray-300 space-y-2 ml-8">
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Copy, modify, or distribute our content</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Create derivative works</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Remove or modify copyright notices</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- 5. Disclaimer -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >5</span
-              >
-              Disclaimer
-            </h2>
-            <p class="text-gray-300 mb-4">
-              We strive to provide high-quality services, but please note:
-            </p>
-            <ul class="text-gray-300 space-y-2 ml-8">
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span
-                  >Services are provided "as is" without any express or implied
-                  warranties</span
-                >
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span
-                  >We do not guarantee that services will be uninterrupted or
-                  error-free</span
-                >
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span
-                  >AI recommendations are for reference only, users should judge
-                  their applicability</span
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- 6. Service Changes -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >6</span
-              >
-              Service Changes
-            </h2>
-            <p class="text-gray-300">
-              We reserve the right to modify, suspend, or terminate services at
-              any time. For significant changes, we will notify users in
-              advance. Your continued use of services indicates acceptance of
-              the updated terms.
-            </p>
-          </div>
-
-          <!-- 7. Termination -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >7</span
-              >
-              Termination
-            </h2>
-            <p class="text-gray-300 mb-4">
-              We may terminate your account in the following circumstances:
-            </p>
-            <ul class="text-gray-300 space-y-2 ml-8">
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>You violate these terms of service</span>
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span
-                  >You have not used your account for an extended period</span
-                >
-              </li>
-              <li class="flex items-start">
-                <span
-                  class="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                ></span>
-                <span>Required by law or to protect other users</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- 8. Governing Law -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >8</span
-              >
-              Governing Law
-            </h2>
-            <p class="text-gray-300">
-              These terms of service are governed by applicable laws. Any
-              disputes should be resolved through friendly negotiation. If
-              negotiation fails, disputes should be submitted to courts with
-              jurisdiction for resolution.
-            </p>
-          </div>
-
-          <!-- 9. Contact Us -->
-          <div>
-            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
-              <span
-                class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-4 text-black font-bold"
-                >9</span
-              >
-              Contact Us
-            </h2>
-            <p class="text-gray-300 mb-4">
-              If you have any questions about these terms of service, please
-              contact us:
-            </p>
-            <p class="text-gray-300">
-              Email: <a
-                href="mailto:chengziwangluokeji@qq.com"
-                class="text-yellow-400 hover:text-yellow-300"
-                >chengziwangluokeji@qq.com</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="text-center mt-8 text-gray-400">
-        <p>&copy; 2024 Step Joy. All rights reserved.</p>
-      </div>
-    </div>
-  </section>
 </Layout>
