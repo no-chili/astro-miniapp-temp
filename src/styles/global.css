@@ -119,3 +119,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* 隐藏全局滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
